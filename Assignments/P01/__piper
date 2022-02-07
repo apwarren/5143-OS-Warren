@@ -1,0 +1,19 @@
+total 18
+-rw-r--r-- 11000 1000  285 Feb  7 06:10  tea
+-rw-r--r-- 11000 1000170546 Feb  6 22:27 AliceBook
+-rw-r--r-- 11000 1000   14 Feb  7 00:17 boil
+-rw-r--r-- 11000 1000  269 Feb  7 00:16 bread
+drwxr-xr-x 11000 1000  288 Feb  7 05:41 cmd_pkg
+drwxr-xr-x 11000 1000   30 Feb  6 08:37 data
+drwxr-xr-x 11000 1000   12 Feb  7 00:20 data2
+-rw-r--r-- 11000 10001100366 Feb  7 06:06 history
+-rw-r--r-- 11000 1000 2079 Feb  7 06:09 main.py
+-rw-r--r-- 11000 1000  441 Feb  7 05:30 piper
+-rw-r--r-- 11000 1000  863 Feb  7 06:09 __piper
+-rw-r--r-- 11000 1000  171 Feb  7 04:00 poetry.lock
+drwxr-xr-x 11000 1000  700 Feb  7 04:03 __pycache__
+-rw-r--r-- 11000 1000  285 Feb  7 04:00 pyproject.toml
+-rw-r--r-- 11000 1000   27 Feb  7 05:53 tape
+-rw-r--r-- 11000 1000   14 Feb  7 05:42 tar
+-rw-r--r-- 11000 1000   38 Feb  7 06:08 tea
+-rw-r--r-- 11000 1000   11 Feb  6 08:49 test

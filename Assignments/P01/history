@@ -1,0 +1,85 @@
+
+ls
+exit
+history
+!1
+exit
+cat test tape > tea
+exit
+ls
+ls -l
+ls -a
+ls -h
+ls -la
+ls -lh
+ls -ah
+ls -lah
+mkdir bananas
+ls
+cd bananas
+pwd
+cd ..
+pwd
+cd ~
+pwd
+cd idk
+mv something.txt bananas
+mv somefile.txt bananas
+cp bananas/somefile.txt bananas/otherfile.txt
+rm -rf bananas
+cat tea
+less AliceBook
+head AliceBook -10
+exit
+head AliceBook -n 10
+exit
+ls
+exit
+ls
+exit
+ls -l
+exit
+ls -al
+exit
+cat tea
+exit
+cat test
+exit
+head cat
+exit
+ls
+cat
+exit
+ls
+exit
+chmod 777 boil 
+ls -l
+chmod 644 boil 
+ls -l
+sort tape
+grep bacon bacon.txt | wc -l
+grep Alice AliceBook | wc -l
+cat tea tape > tar
+exit
+grep 1 bread
+exit
+ls -l
+grep 6 ls -l
+ls -l | grep 6
+ls -lh
+exit
+cat tea
+ls | cat
+ls | cat ls
+ls | cat tea
+exit
+less AliceBook
+exit
+less AliceBook
+less AliceBook
+exit
+ls | cat >> pie
+exit
+ls | cat >> pie
+exit
+exit
