@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 import sys
-sys.path.append('/home/runner/idk/cmd_pkg')
+sys.path.append('/Users/allyw/source/VScode/CMPS 5143-OS/5143-OS-Warren/Assignments/P01/cmd_pkg')
 from cmd_pkg import *
 
 #Create getch
@@ -26,9 +26,16 @@ chara = getch()
 while(chara != '\r'):
   if(chara == '\x7f'):
     command = command[:-1]
-    print('\b \b', end = '', flush = True)
+    print('\b  \b\b', end = '', flush = True)
+  elif(chara.isprintable()):
+    command += str(chara)
   else:
-    command += chara
+      #Don't do anything if keys are pressed
+      if(chara == '\x1b'):
+          chara = getch()
+          chara = getch()
+          chara = getch()
+      continue
   print(chara, end = '', flush = True)
   chara = getch()
 print()
@@ -53,9 +60,16 @@ while(True):
       while(chara != '\r'):
         if(chara == '\x7f'):
           command = command[:-1]
-          print('\b \b', end = '', flush = True)
-        else:
+          print('\b  \b\b', end = '', flush = True)
+        elif(chara.isprintable):
           command += chara
+        else:
+            #Don't do anything if keys are pressed
+            if(chara == '\x1b'):
+                chara = getch()
+                chara = getch()
+                chara = getch()
+            continue
         print(chara, end = '', flush = True)
         chara = getch()
       print()
@@ -66,9 +80,9 @@ while(True):
     redirection = command[1:]
     command = command[0]
 
-  # if('<' in command):
-  #   command = command.split('<')
-  #   command = 
+  if('<' in command):
+    command = command.split('<')
+    command = ''.join(command)
   
   #Check for piping
   if('|' in command):
@@ -140,9 +154,16 @@ while(True):
     while(chara != '\r'):
       if(chara == '\x7f'):
         command = command[:-1]
-        print('\b \b', end = '', flush = True)
-      else:
+        print('\b  \b\b', end = '', flush = True)
+      elif(chara.isprintable):
         command += chara
+      else:
+        #Don't do anything if keys are pressed
+        if(chara == '\x1b'):
+            chara = getch()
+            chara = getch()
+            chara = getch()
+        continue
       print(chara, end = '', flush = True)
       chara = getch()
     print()

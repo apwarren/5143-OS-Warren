@@ -1,4 +1,4 @@
-from Cat import cat
+from .Cat import cat
 def sort(params):
   try:
     allInfo = cat(params)

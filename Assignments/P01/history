@@ -83,3 +83,34 @@ exit
 ls | cat >> pie
 exit
 exit
+ls
+exit
+exit
+ls
+exit
+exit
+ls
+ls -l
+ls -la
+exit
+cp tape stapler
+mv stapler data2
+cp tape data3/stapler
+exit
+cp tape blue/stapler
+cp tea blue/stapler
+cp tape blue/stew
+rm blue/stapler
+rm -r blue
+cp tea steak
+cp tea streak
+cp tape stock
+rm st*
+grep Alice AliceBook
+grep -l Alice AliceBook
+wc Alice AliceBook
+wc AliceBook
+less AliceBook
+exit
+less AliceBook
+exit

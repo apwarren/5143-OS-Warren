@@ -1,7 +1,6 @@
 #Finished
-
 import os
-from getch import Getch
+from .getch import Getch
 
 def less(params):
   try:
