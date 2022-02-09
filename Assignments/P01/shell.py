@@ -39,6 +39,7 @@ while(chara != '\r'):
   print(chara, end = '', flush = True)
   chara = getch()
 print()
+#------end of getching
   
 history.append(command + '\n')
 allCommands = []
@@ -51,7 +52,7 @@ while(True):
     try:
       line = int(command[1:])
       command = history[line]
-    except:
+    except Exception:
       print('bash: history: numeric argument required')
       #Get new input from user
       print('% ', end = '', flush = True)
@@ -73,6 +74,7 @@ while(True):
         print(chara, end = '', flush = True)
         chara = getch()
       print()
+      continue
 
   if('>' in command):
     #We want to append to a file
@@ -168,4 +170,3 @@ while(True):
       chara = getch()
     print()
     history.append(command + '\n')
-   

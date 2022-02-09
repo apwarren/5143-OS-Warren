@@ -51,9 +51,10 @@ def less(params):
               \n
               Less Command Guide for Viewing File Partially:\n
               ==============================================\n
-              press 'up arrow'  | Move up one line\n
+              press  'up arrow' | Move up one line\n
               press 'down arrow'| Move down one line\n
-              press  'f' or 'F' | Move forwared one page\n
+              press  'space bar'| Move forward one page\n
+              press  'f' or 'F' | Move forward one page\n
               press  'b' or 'B' | Move backward one page\n
               press  's' or 'S' | Move to the beginning of the file\n
               press  'e' or 'E' | Move to the end of the file\n

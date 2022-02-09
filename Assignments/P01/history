@@ -114,3 +114,155 @@ less AliceBook
 exit
 less AliceBook
 exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+ls
+ls
+
+exit
+less AliceBook
+exit
+exit
+less AliceBook
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+ls
+ls
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+eex
+exit
+eexit
+exit
+exit
+ls
+ ls
+exit
+ls -a
+ls -a | wc -m
+less AliceBook
+less AliceBook
+exit
+!w
+!3
+!7
+!w
+!q
+!5
+!6
+!10
+exit
+!5
+!5
+exit
+!23
+who
+exit
+history
+exit
+history | wc
+wc history
+ls | head -n 2
+exit
+ls | head -n 1
+exit
+ls | head -n 1
+exit
+ls | head -n 1
+exit
+ls | head -n 1
+exit
+ls | head -n 1
+exit
+head ls
+head tape
+ls | head
+ls | head -n 1
+exit
+ls -l | head -3
+ls -l | head -n 3
+exit
+ls -l | head -n 3
+exit
+ls -l | head -n 3
+exit
+ls -l | tail -n 3
+ls -l
+exit
+ls -l | tail -n 3
+ls -l | tail -n 3
+ls -l | tail
+exit
+exit
+ls -l | tail -n 3
+exit
+head AliceBook
+exit
+cat data/main2
+exit
+cp data/main1 taco
+exit
+cp data/main2 notdata
+exit
+cp data/main2 notdata
+exit
+cat data/main2
+cp data/main2 notdata
+exit
+ cp data/main2 notdata
+cp main2 notdata
+exit
+cp data/main2 notdata
+pwd
+exit
+cp data/main2 notdata
+ls data
+ls -l data
+exit
+cp data/main2 notdata
+exit
+cp taco cake
+cp taco data/cake
+cp data/cake notdata/bread
+cp data/cake notdata
+exit
+cp tea data
+exit
+cp tea data
+exit
+cp tea data
+exit
+cp tea data
+exit
+mv tea data
+exit
+cp taco data
+exit

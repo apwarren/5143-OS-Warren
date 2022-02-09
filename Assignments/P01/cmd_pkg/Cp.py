@@ -1,17 +1,17 @@
-#Works except for copying entire directories but I'm tired and its fine
+#Finished!!! It's fun when it doesn't take long
 import os
 
 def cp(params):
   originalPath = os.getcwd()
   #Error checking
   if(len(params) == 0):
-    return('cp: missing file operand')
+    return('mv: missing file operand')
 
   if(len(params) == 1):
-    return('cp: missing destination file operand after \'' + params[0] + '\'')
+    return('mv: missing destination file operand after \'' + params[0] + '\'')
 
   if(len(params) > 2):
-    return('cp: too many arguments')
+    return('mv: too many arguments')
 
   original = params[0]
   newFile = params[1]
@@ -38,6 +38,11 @@ def cp(params):
       newPath = newPath[:-1]
       newPath = '/'.join(newPath)
       os.chdir(newPath)
+
+    #moving to a directory not another file
+    if(os.path.isdir(newFile)):
+      os.chdir(newFile)
+      newFile = original
       
     #Copy contents into new file
     with open(newFile, 'w') as f:
@@ -48,6 +53,6 @@ def cp(params):
     
   except Exception:
     if(os.path.exists(original)):
-      return ('cp: cannot stat \'' + newFile + '\': No such file or directory')
+      return ('mv: cannot stat \'' + newFile + '\': No such file or directory')
     else:
-       return ('cp: cannot stat \'' + original + '\': No such file or directory')
+       return ('mv: cannot stat \'' + original + '\': No such file or directory')
