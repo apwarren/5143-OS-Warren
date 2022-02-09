@@ -266,3 +266,6 @@ mv tea data
 exit
 cp taco data
 exit
+cat --help
+ls
+exit

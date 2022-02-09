@@ -16,8 +16,6 @@ def cat(params):
         cat FILE1 FILE2 . . . 
           --display multiple files one after the other given their names
         --help display this help and exit
-        --version
-                output version information and exit
   """
   allFiles = ''
   for files in params:

@@ -110,6 +110,11 @@ while(True):
 
   elif(cmd == 'history'):
     result = '\n'.join(history)
+
+  elif('--help' in command):
+      cmd = 'help'
+      params = command[0]
+      result = commands[cmd](params)
     
   #We are not exiting program
   else:

@@ -1,3 +1,4 @@
+from cmd_pkg import *
 
-def help():
-  pass
+def help(params):
+  return eval(params).__doc__
