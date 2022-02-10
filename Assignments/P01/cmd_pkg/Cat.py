@@ -1,4 +1,3 @@
-#Finished for Now
 import os
 
 def cat(params):
@@ -18,15 +17,22 @@ def cat(params):
         --help display this help and exit
   """
   allFiles = ''
+
+  #Read from every given file the user wants 
   for files in params:
+    #Open and read the file if it exists
     try:
       with open(files) as f:
+        #cat wants the entire file's contents
         allFiles += f.read() + '\n'
       continue
+
+    #The file does not exist in the directory or the object is not a file
     except Exception:
-        if(files in os.listdir('.')):
-          allFiles += "cat: " + files + ": Is a directory\n"
+        if(os.path.isdir(files)):
+          print("cat: " + files + ": Is a directory")
         else:
-          allFiles += "cat: " + files + ": No such file or directory\n"
+          print("cat: " + files + ": No such file or directory")
           
+  #return all files content to the screen        
   return allFiles

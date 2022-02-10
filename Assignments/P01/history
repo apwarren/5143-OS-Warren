@@ -269,3 +269,14 @@ exit
 cat --help
 ls
 exit
+cat data/main2 test
+exit
+cat data test
+exit
+cat data
+cat data >> water
+cat data test
+exit
+cat data test
+cat data test notdata
+exit
