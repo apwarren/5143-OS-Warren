@@ -1,3 +1,13 @@
+'''
+Class   : Getch
+    Getch has been provided and written by Dr. Griffin. This function takes input from
+    the user and does not print said input to the terminal. Instead it stores it to a given
+    char to be used by the programmer. For this shell, the getch is used to obtain input
+    from the terminal and then append each character to a string to be sent as the
+    command and parameters of the shell. Getching is also used within the Less command
+    to allow the user to press specific keys in order to traverse through the given
+    file's contents.
+'''
 
 class Getch:
     """Gets a single character from standard input.  Does not echo to the screen."""
