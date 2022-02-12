@@ -280,3 +280,30 @@ exit
 cat data test
 cat data test notdata
 exit
+grep Alice AliceBook Taco Test Tea
+grep -l Alice AliceBook Test Taco bread
+exit
+head test taco
+exit
+head test taco
+head bread
+exit
+head bread
+exit
+head bread
+exit
+head bread
+exit
+head bread
+exit
+head bread
+exit
+head bread
+exit
+head bread
+head -n 3 bread taco test cake
+exit
+head cake test bread taco
+exit
+head --help
+exit
