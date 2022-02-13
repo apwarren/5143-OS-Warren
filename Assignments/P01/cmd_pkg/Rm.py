@@ -16,6 +16,7 @@ def rm(params):
         -r is called. This flag will recursively delete everything inside
         of the directory and then once its contents have been emptied it will
         delete the directory as well.
+    USAGE
         rm FILE
           --Delete FILE from the directory
         rm FILE1 FILE2

@@ -379,3 +379,17 @@ exit
 mkdir boat
 rmdir boat
 exit
+rmdir pancake
+rmdir piece pizza
+rmdir pizza
+exit
+tail AliceBook -n 5
+ls -l | tail -n 3
+exit
+rm apple applet
+exit
+tail bell bottoms
+tail bell bottoms -n 3
+exit
+who
+exit

@@ -13,6 +13,7 @@ def rmdir(params):
         a partial match to directory names. This flag will recursively 
         delete everything inside of the directory and then once its 
         contents have been emptied it will delete the directory as well.
+    USAGE
         rm DIRECTORY
           --Delete DIRECTORY from the system
         rm DIRECTORY1 DIRECTORY2
