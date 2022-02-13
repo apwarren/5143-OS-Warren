@@ -109,7 +109,7 @@ while(True):
     sys.exit(0)
 
   elif(cmd == 'history'):
-    result = '\n'.join(history)
+    result = ''.join(history)
 
   elif('--help' in command):
       cmd = 'help'

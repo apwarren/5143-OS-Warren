@@ -307,3 +307,75 @@ head cake test bread taco
 exit
 head --help
 exit
+ls -l
+exit
+ls -lah
+exit
+ls -lah
+exit
+ls -lah
+exit
+ls -lah
+exit
+ls -lah
+exit
+ls -l
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls -a
+cp water waiter
+ls
+ls -a
+cp water waste
+ls -a
+exit
+history | wc
+exit
+history | wc
+exit
+mkdir bananas
+exit
+mkdir bandana band
+exit
+mkdir bananas
+exit
+mkdir test
+exit
+mv tree band
+mv test band/tree
+mv tree candle
+mv taco candle
+exit
+pwd
+exit
+rm cake candle
+rm candle
+exit
+rm wa*
+exit
+rmdir bananas
+exit
+rm bread ap*e t* *ta2
+exit
+rm bread ap*e t* *ta
+exit
+rm bread ap*e t* *ta2
+exit
+rm bread ap*e t* *ta
+exit
+rm test.txt
+exit
+rm somefile.txt
+exit
+rm bubble
+exit
+rm -r ban*
+exit
+mkdir boat
+rmdir boat
+exit

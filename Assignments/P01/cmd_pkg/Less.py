@@ -1,18 +1,47 @@
-#Finished
 import os
 from .getch import Getch
 
 def less(params):
+  """   
+    NAME
+        less - Print out part of a file when desired
+    SYNOPSIS
+        less FILE1
+    DESCRIPTION
+        This command takes a given file and only prints out partially
+        what is within the file at a given time. By using certain keys
+        that have been grabbed through getch, the command will traverse
+        through the file based on what the user presses. For instance,
+        using the up and down arrow keys will allow the user to move
+        up and down a line in the file. Using space/f and 'b' will
+        allow the user to move up and down 'pages' of the file. A
+        page is considered to be the size of the terminal. The user
+        can view all inner commands using 'h' which will allow them
+        to view a guideline of all keys. Lastly, pressing 'q' will
+        cause the command to finish and exit to let the user move
+        on to a new command.
+    USAGE
+        less FILE1
+          --Print the first several lines of FILE1 that fit within the terminal
+          --Does not move on to a new shell command until Q is pressed
+  """
   try:
+    #Get and read every line in the file to be traversed through
     with open(params[0], 'r') as f:
       lines = f.readlines()
+
+    #Get file size to know when to stop
     fileLength = len(lines)
 
     #We really only need to know how many rows the terminal size is so we ignore column size
     rows = os.get_terminal_size()[-1]
-     #Convert sizing into integer values
-    start = 0
+
+    #Convert sizing into integer values
+    #Only show half of terminal size because for some reason the size is too big
     rows = int(rows) // 2
+    #Start at the beginning of the file
+    start = 0
+    #The end of the display should initially be at the end of the terminal size
     end = rows
 
     #We plan to get user input without displaying it to the terminal
@@ -21,6 +50,7 @@ def less(params):
 
     #Keep showing unless user specifically wants to quit
     while(action.lower() != 'q'):
+
       #Display portion of file
       for line in lines[start : end]:
         print(line)
@@ -45,7 +75,9 @@ def less(params):
               if(end < fileLength):
                 start += 1
                 end += 1
-            
+            else:
+              continue
+      #Show the help guideline window showing all commands      
       elif(action.lower() == 'h'):
         print('''
               \n
@@ -90,7 +122,10 @@ def less(params):
       elif(action.lower() == 's'):
         start = 0
         end = rows
-    return
+    
+    #Return all file contents for redirection purposes
+    return ''.join(lines)
 
+  #File could not be read
   except:
-    pass
+    print('less: File does not exist')

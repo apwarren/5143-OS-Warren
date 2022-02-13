@@ -12,6 +12,7 @@ from .Mkdir   import mkdir
 from .Mv      import mv
 from .Pwd     import pwd
 from .Rm      import rm
+from .Rmdir   import rmdir
 from .Sort    import sort
 from .Tail    import tail
 from .Wc      import wc
