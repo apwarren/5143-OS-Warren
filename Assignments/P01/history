@@ -413,3 +413,15 @@ tail -n 4 data/main1
 exit
 tail -n 2 bacon.txt data/main1 notdata/taco
 exit
+less AliceBook
+less AliceBook
+exit
+history
+exit
+l
+[A[Bexit
+ 
+exit
+exit
+lw
+exit

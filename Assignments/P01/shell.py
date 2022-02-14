@@ -125,7 +125,10 @@ while(True):
     try:
       result  = commands[cmd](params)
     except Exception:
-      result = commands[cmd]()
+        try:
+            result = commands[cmd]()
+        except Exception:
+            result = None
 
   #Still piping
   if(len(allCommands) > 0):

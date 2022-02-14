@@ -21,7 +21,7 @@ def rmdir(params):
   """
   #Pass in every given directory name and call the remove function recursively
   direct = params
-  direct.insert(0, '-r')
+  #direct.insert(0, '-r')
   #rm will delete the directory and all its contents
   rm(direct)
   return
