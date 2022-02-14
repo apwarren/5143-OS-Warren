@@ -425,3 +425,7 @@ exit
 exit
 lw
 exit
+cd ..
+cd P01
+exi
+exit

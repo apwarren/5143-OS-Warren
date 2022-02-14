@@ -24,7 +24,7 @@ with open("cmd_pkg/__init__.py", "r") as f:
     commands[key] = eval(key)
 
 #Prompt and get first input from user
-print('% ', end = '', flush = True)
+print(pwd(), '% ', end = '', flush = True)
 command = ''
 chara = getch()
 while(chara != '\r'):
@@ -59,7 +59,7 @@ while(True):
     except Exception:
       print('bash: history: numeric argument required')
       #Get new input from user
-      print('% ', end = '', flush = True)
+      print(pwd(), '% ', end = '', flush = True)
       command = ''
       chara = getch()
       while(chara != '\r'):
@@ -162,7 +162,7 @@ while(True):
         print(result)   
         
     #Get next input from user
-    print('% ', end = '', flush = True)
+    print(pwd(), '% ', end = '', flush = True)
     command = ''
     chara = getch()
     while(chara != '\r'):
