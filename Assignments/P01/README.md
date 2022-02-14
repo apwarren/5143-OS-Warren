@@ -49,17 +49,17 @@ copy, move, and read from any item within a current directory.
 |         | `-l`                         | count number of lines in file                                              | finished |
 |         | `-m`                         | count number of characters in file                                         | finished |
 |         | `-w`                         | count number of words in file                                              | finished |
-| `command > file`          | redirect standard output to a file                   | finished |
-| `command >> file`         | append standard output to a file                     | finished |
-| `command < file`          | redirect standard input from a file                  | finished |
-| `command1`                | `command2`                                           | finished |
-| `command1 \| command2`    | pipe the output of command1 to the input of command2 | finished |
-| `cat file1 file2 > file0` | concatenate file1 and file2 to file0                 | finished |
-| `sort`                    | sort data                                            | finished |
-| `who`                     | list users currently logged in                       | finished |
-| `history`   | show a history of all your commands                              | finished |
-| `!x`        | this loads command `x` from your history so you can run it again | finished |
-| `chmod xxx` | change modify permission                                         | finished |
+| `command > file`          | redirect standard output to a file                   |  | finished |
+| `command >> file`         | append standard output to a file                     |  | finished |
+| `command < file`          | redirect standard input from a file                  |  | finished |
+| `command1`                | `command2`                                           |  | finished |
+| `command1 \| command2`    | pipe the output of command1 to the input of command2 |  | finished |
+| `cat file1 file2 > file0` | concatenate file1 and file2 to file0                 |  | finished |
+| `sort`                    | sort data                                            |  | finished |
+| `who`                     | list users currently logged in                       |  | finished |
+| `history`   | show a history of all your commands                              |  | finished |
+| `!x`        | this loads command `x` from your history so you can run it again |  | finished |
+| `chmod xxx` | change modify permission                                         |  | finished |
 
 
 
