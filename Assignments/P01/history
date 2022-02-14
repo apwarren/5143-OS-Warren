@@ -397,3 +397,19 @@ who
 exit
 who
 exit
+rm notdata/someother.txt
+rm pie
+exit
+cat notdata/tea
+exit
+wc notdata/tea
+wc history
+wc data/cake
+wc notdata/cake
+head notdata/cake
+exit
+tail data/main1
+tail -n 4 data/main1
+exit
+tail -n 2 bacon.txt data/main1 notdata/taco
+exit
