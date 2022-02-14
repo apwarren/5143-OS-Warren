@@ -1,4 +1,6 @@
 #!/usr/local/bin/python3
+
+#Get and add location of where command folder is
 import sys
 sys.path.append('/Users/allyw/source/VScode/CMPS 5143-OS/5143-OS-Warren/Assignments/P01/cmd_pkg')
 from cmd_pkg import *
@@ -10,16 +12,18 @@ getch = Getch()
 with open('history') as f:
   history = f.readlines()
 
+#Store all potential commands inside a dictionary
 commands = {}
 
 
-#Make dictionary containing all keys
+#Make dictionary containing all keys be the command name
 with open("cmd_pkg/__init__.py", "r") as f:
   for item in f.readlines():
     key = item.split()[-1]
+    #The dictiorary holds a function to go to
     commands[key] = eval(key)
 
-#Get first input from user
+#Prompt and get first input from user
 print('% ', end = '', flush = True)
 command = ''
 chara = getch()
