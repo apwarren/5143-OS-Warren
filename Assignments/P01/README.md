@@ -14,7 +14,7 @@ copy, move, and read from any item within a current directory.
 
 #### Instructions
 
-- To run `ls` ...
+- To run type python3 shell.py into a linux shell and it will run the program
 
 ***Commands***:
 
