@@ -20,7 +20,7 @@ commands = {}
 with open("cmd_pkg/__init__.py", "r") as f:
   for item in f.readlines():
     key = item.split()[-1]
-    #The dictiorary holds a function to go to
+    #The dictionary holds a function to go to
     commands[key] = eval(key)
 
 #Prompt and get first input from user

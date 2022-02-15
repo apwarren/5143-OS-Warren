@@ -22,17 +22,36 @@ def grep(params):
           --Look through all files from FILE1 to FILEX and print each file name that KEYWORD appears
 
   """
-  #The user has input flags that need to be checked
-  if('-' in params[0]):
-    flags = params[0]     #The user wants a specific output
-    keyword = params[1]   #Word to be found within the file
-    files = params[2:]    #All files that need to be looked through
+  items = ' '.join(params)
+  #Keyword is more than just one word
+  if('\"' in items or '\'' in items):
+    #Multiword grep should be seen in quotes
+    items = items.split('\"' and '\'')
 
-  #User just wants standard grep
-  else: 
-    flags = ''            #No flags were given in the command
-    keyword = params[0]   #Word to be found within the file
-    files = params[1:]    #All files that need to be looked through
+    #The user has input flags that need to be checked
+    if('-' in items[0]):
+      flags = items[0]            #The user wants a specific output
+      keyword = items[1]          #Words to be found within the file
+      files = items[2].split()    #All files that need to be looked through
+
+    #User just wants standard grep
+    else: 
+      flags = ''            #No flags were given in the command
+      keyword = items[1]   #Words to be found within the file
+      files = items[2].split()    #All files that need to be looked through
+
+  else:
+    #The user has input flags that need to be checked
+    if('-' in params[0]):
+      flags = params[0]     #The user wants a specific output
+      keyword = params[1]   #Word to be found within the file
+      files = params[2:]    #All files that need to be looked through
+
+    #User just wants standard grep
+    else: 
+      flags = ''            #No flags were given in the command
+      keyword = params[0]   #Word to be found within the file
+      files = params[1:]    #All files that need to be looked through
 
   listing = []
 

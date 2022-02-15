@@ -445,3 +445,30 @@ cd car
 mv car/bottoms bottoms
 rmdir car data
 exit
+grep Alice Riddle AliceBook
+exit
+grep Alice AliceBook
+grep "So Alice" AliceBook
+exit
+grep "So Alice" AliceBook
+grep Alice AliceBook
+grep 'little Alice' AliceBook
+exit
+grep 'little Alice' AliceBook
+exit
+grep 'little Alice' AliceBook
+exit
+grep 'little Alice' AliceBook
+[A[Bexit
+[A[D[C[A[B[D[B[C[A[D[B[C[A[C[A[A[A[B[B[B[B[B[Dexit
+exit
+grep 'little Alice' AliceBook
+exit
+grep Alice AliceBook
+grep 'little Alice' AliceBook
+grep 'Drink me' AliceBook bell bottoms
+grep -l 'little Alice' AliceBook bell bottoms
+exit
+grep -l 'little Alice' AliceBook bell bottoms
+grep -l Alice AliceBook bell bottoms
+exit
