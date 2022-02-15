@@ -429,3 +429,19 @@ cd ..
 cd P01
 exi
 exit
+mv notdata data
+exit
+mkdir bagel
+rmdir bagel
+mkdir piece
+rmdir piece
+mkdir car
+mv bottoms car
+rmdir car
+rmdir proud
+exit
+cd car
+ cd ..
+mv car/bottoms bottoms
+rmdir car data
+exit
