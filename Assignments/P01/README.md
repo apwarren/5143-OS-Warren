@@ -64,7 +64,8 @@ copy, move, and read from any item within a current directory.
 
 
 ***Non Working Components***
-Everything should be working adequately
+Every command should be working adequately
+You cannot use the arrow keys to grab previous history though
 
 ***References***
 - https://linuxconfig.org/understanding-of-ls-command-with-a-long-listing-format-output-with-permission-bits
