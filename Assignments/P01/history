@@ -472,3 +472,84 @@ exit
 grep -l 'little Alice' AliceBook bell bottoms
 grep -l Alice AliceBook bell bottoms
 exit
+ls
+cd ..
+cp P01/shell.py shell.py
+ls
+cd P01
+rm -r bananas
+ls
+cd ..
+mv shell.py P01
+cd P01
+ls
+cat bacon.txt
+less bacon.txt
+head bacon.txt -n 3
+tail bacon.txt -n 3
+ls
+head history bacon.txt -n 2
+grep Alice AliceBook
+grep -l Alice AliceBook bacon.istory
+grep -l Alice AliceBook bacon.txt history
+wc AliceBook History
+!1
+head -n 4 history
+ls -l
+chmod 000 bacon.txt
+ls -l
+chmod 644 bacon.txt
+ls -l
+sort bacon.txt
+grep bacon bacon.txt | wc -l
+cat bacon.txt >> bacon2
+ls
+cat bacon2
+cat --help
+exit
+rm -r *txt
+rm *txt
+exit
+rm -r bananas
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm b*
+exit
+rm -r bananas
+exit
+rm -r bananas
+[A[Bexit
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+python3 test.py
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+[B[A[Bexit
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+[A[Bexit
+exit
+rm -r bananas
+exit

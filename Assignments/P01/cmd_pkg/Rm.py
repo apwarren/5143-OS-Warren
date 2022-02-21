@@ -34,15 +34,17 @@ def rm(params):
   #No files were given to be deleted
   if(len(params) == 0):
     print('rm: missing file operand')
+    return
 
   #A flag was passed in but no file names to be deleted
   elif(len(params) == 1 and '-' in params[0]):
     print('rm: missing file operand after \'' + params[0] + '\'')
+    return
 
   #A flag was passed to be used for recursive removal
-  if('-' in params[0]):
+  elif('-' in params[0]):
     flags = params[0]
-    original = params
+    original = params[1:]
     
   else:
     #Default is no flags passed
@@ -75,19 +77,22 @@ def rm(params):
         #The wildcard or filename matches with a file in the directory
         if(re.match(file, lists)):
           allFile.append(lists)   
-
   #Now get ready to remove all files from the directory
   try:
     for file in allFile:
       #we plan to delete an entire directory so use recursion
       if('r' in flags):
         #Current item is a directory
-        if(os.path.isdir(file)):
+        if(os.path.isdir(file) and len(os.listdir(file)) > 0):
+          direct = os.getcwd()
           #Get everything inside of the directory
           newparams = os.listdir(file)
           #Remove everything inside of the directory recursively
           newparams.insert(0, '-r')
-          rm(['-r', lists])
+          os.chdir(file)
+          print(newparams)
+          rm(newparams)
+          os.chdir(direct)
         else:
           #Item was a file and can just be simply removed
           os.remove(file)
