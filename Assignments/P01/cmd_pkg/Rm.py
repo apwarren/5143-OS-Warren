@@ -90,7 +90,6 @@ def rm(params):
           #Remove everything inside of the directory recursively
           newparams.insert(0, '-r')
           os.chdir(file)
-          print(newparams)
           rm(newparams)
           os.chdir(direct)
         else:
