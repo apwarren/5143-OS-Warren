@@ -83,15 +83,18 @@ def rm(params):
       #we plan to delete an entire directory so use recursion
       if('r' in flags):
         #Current item is a directory
-        if(os.path.isdir(file) and len(os.listdir(file)) > 0):
-          direct = os.getcwd()
-          #Get everything inside of the directory
-          newparams = os.listdir(file)
-          #Remove everything inside of the directory recursively
-          newparams.insert(0, '-r')
-          os.chdir(file)
-          rm(newparams)
-          os.chdir(direct)
+        if(os.path.isdir(file)):
+          if(len(os.listdir(file)) > 0):
+            direct = os.getcwd()
+            #Get everything inside of the directory
+            newparams = os.listdir(file)
+            #Remove everything inside of the directory recursively
+            newparams.insert(0, '-r')
+            os.chdir(file)
+            rm(newparams)
+            os.chdir(direct)
+          else:
+            os.rmdir(file)
         else:
           #Item was a file and can just be simply removed
           os.remove(file)

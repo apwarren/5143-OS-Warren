@@ -553,3 +553,36 @@ rm -r bananas
 exit
 rm -r bananas
 exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+[A[Bexit
+exit
+rm -r bananas
+exit
+rm -r bananas
+exit
+rm -r bananas
+mkdir bananas
+cd bananas
+mkdir apples
+cd apples
+mkdir pears
+cd ..
+cd..
+cd..
+cd ..
+rm -r bananas
+exit
+mkdir bananas
+cd bananas
+mkdir apples/pears
+mkdir apples
+cd apples
+mkdir pears
+cd ..
+cd ..
+rm -r bananas
+exit
