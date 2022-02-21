@@ -25,6 +25,7 @@ def chmod(params):
   
   #Number is given in octal so convert and store it as decimal
   permissions = int(params[0], 8)
+  
   #The desired file/directory should be the second item of the parameter list
   file = params[1]
   #change the mode of permissions for given file/directory

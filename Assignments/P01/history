@@ -586,3 +586,39 @@ cd ..
 cd ..
 rm -r bananas
 exit
+ls -l
+chmod 000 test.py
+ls -l
+exit
+ls -l
+chmod 000 test.py
+exit
+chmod 000 test.py
+ls -l
+exit'
+exit
+chmod 000 test.py
+exit
+chmod 000 test.py
+ls -l
+chmod 000 test.py
+[A[Bexit
+exit
+chmod 000 test.py
+chmod 000 test.py
+exit
+chmod 000 test.py
+chmod 666 test.py
+chmod 66
+chmod 664 test.py
+exit
+chmod 000 test.py
+ls -l
+exit
+chmod 000 test.py
+exit
+chmod 000 test.py
+ls -l
+chmod 664 test.py
+ls -l
+exit
