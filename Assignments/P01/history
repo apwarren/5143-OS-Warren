@@ -622,3 +622,8 @@ ls -l
 chmod 664 test.py
 ls -l
 exit
+wc AliceBook
+ll
+ls -lah
+rm test.py
+exit
