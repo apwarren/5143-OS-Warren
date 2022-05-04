@@ -1,13 +1,14 @@
 from alu import Alu
 from lock import Lock
 import sys
+from rich import print
 
 class Cpu():
     def __init__(self, registers, tslice, mem):
         self.cache = []
         self.pc = 0
         self.registers = registers
-        self.alu = Alu(registers)
+        self.alu = Alu(self.registers)
         self.timeSlice = tslice
         self.memory = mem
         self.lock = Lock()
@@ -43,29 +44,30 @@ class Cpu():
                     self.registers[index] = self.memory[memLetter][location]
 
                 elif (parts[0] == 'WRITE'):
-                    index = int(parts[-1][-1])
+                    index = int(parts[1][-1])
                     memLetter = parts[-1][0]
                     location = parts[-1][1:]
-                    self.memory[memLetter][location] = self.registers[index]
+                    try:
+                        self.memory[memLetter][location] = self.registers[index - 1]
+                    except Exception:
+                        self.memory[memLetter][location] = 0
+              
 
-                elif():
+                elif(parts[0] != 'LOAD' and 'sleep' not in parts):
                     index = int(parts[1][1])
-                    print(index)
-                    print(instruction)
-                    self.registers[index] = self.alu.exec(parts[0])
+                    self.registers[index - 1] = self.alu.exec(parts[0], self.registers)
 
                 currentTSlice -= 1
                 counter += 1
 
 
-            elif(currentTSlice < 0):
+            if(currentTSlice < 0 and pcb.getPriority() == 9999):
                 pcb.setPCounter(1, counter)
                 pcb.setState('Ready')
                 pcb.setRegContents(self.registers)
-                print('Got cut off')
-                sys.exit()
                 return pcb
-    
+
+        pcb.setState('Ready')
         pcb.finishedInstruction()
         if('sleep' in pcb.getCurrentInstruction()[0]):
             pcb.setState('Waiting')

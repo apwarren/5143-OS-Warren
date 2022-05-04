@@ -2,7 +2,6 @@ from rich import print
 from collections.abc import MutableMapping
 from random import randint
 
-
 class Register:
     """Represents a single `register` with a read and write method
     to change the registers values.
@@ -58,7 +57,8 @@ class Registers(MutableMapping):
         if isinstance(k, int) and k < self.num:
             # getattr(self, k)
             return self.registers[k].read()
-        return None
+        else:
+            return 99
 
     def __len__(self):
         """Len() of object instance. Must be here to overload class
@@ -71,7 +71,7 @@ class Registers(MutableMapping):
         list or dictionary.
         """
         if isinstance(k, int):
-            self.registers[k] = None
+            self.registers[k] = 0
 
     def __iter__(self):
         """Allows object iteration, or looping over this object"""
@@ -89,10 +89,10 @@ class Registers(MutableMapping):
         return self.__str__()
 
 
-if __name__ == "__main__":
-    reg = Registers(4)  # create 4 registers
+# if __name__ == "__main__":
+#     reg = Registers(4)  # create 4 registers
 
-    for i in range(len(reg)):  # add random data to them
-        reg[i] = randint(1, 100)
+#     for i in range(len(reg)):  # add random data to them
+#         reg[i] = randint(1, 100)
 
-    print(reg)  # print them out
+#     print(reg)  # print them out

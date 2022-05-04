@@ -1,4 +1,13 @@
 #!/Users/griffin/.pyenv/shims/python3
+'''
+Class   : WeightedPriorities
+    WeightedPriorities has been provided and written by Dr. Griffin. This class 
+    generates a json and dat file containing sets of pcb processes and each one's
+    priority within the simulation. Depending on a random selection, it is possible
+    for cpu or io bursts to have heavier burst amounts to simulate how that occurs
+    in a scheduler. Each time this file is run, a new json and dat file will be 
+    generated and written to datafile.dat and datafile.json
+'''
 
 import random
 import sys

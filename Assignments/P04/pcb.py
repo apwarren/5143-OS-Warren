@@ -1,3 +1,4 @@
+from dis import Instruction
 import sys
 
 class Pcb():
@@ -54,14 +55,16 @@ class Pcb():
     def setPCounter(self, index, val):
         self.pCounter[index] = val
         self.currentInstruction = self.currentInstruction[val:]
-        print(type(self.currentInstruction))
-        sys.exit()
+        if(self.currentInstruction == []):
+            self.finishedInstruction()
+        
 
     def finishedInstruction(self):
         self.pCounter[0] += 1
         self.pCounter[1] = 0
         del self.instructions[0]
-        self.currentInstruction = self.instructions[0]
+        if(len(self.instructions) > 0):
+            self.currentInstruction = self.instructions[0]
 
     def sleep(self):
         self.sleeper -= 1
