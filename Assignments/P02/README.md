@@ -1,5 +1,5 @@
 #### 4 May 2022
-#### 5143 Scheduling Simulator
+### 5143 Scheduling Simulator
 
 #### Group Members
 
